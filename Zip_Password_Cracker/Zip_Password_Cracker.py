@@ -34,8 +34,8 @@ def main():
 	parser = optParse.OptionParser( "usage%prog"+ "-f <zipFile> -d <dictionary>")
 	parser.add_option('-f',dest='zname',type="string", help="Specify a zip file")
 	parser.add_option('-d',dest='dname',type="string", help="Specify a dict file")
-	(options, args) = parser.parser_args()
-	if( options.zname == None) | (option.dname == None)
+	(options, args) = parser.parse_args()
+	if( options.zname == None) | (option.dname == None):
 		print parser_usage
 		exit(0)
 	else:
@@ -48,5 +48,5 @@ def main():
 		password = line.strip('\n')
 		t= Thread( target = extractFile, args=(zFile, password))
 		t.start()
-if __name__ == __main__:
+if __name__ == '__main__' :
 	main()
