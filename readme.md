@@ -5,4 +5,4 @@ Tools covered till now:
 - Simple port scans with and without nmap
 - Zip and UNIX password crackers
 - XOR Encryption
-- Scapy Introduction
+- Scapy Introduction (sr and sr1 connect)
