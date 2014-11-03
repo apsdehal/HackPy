@@ -26,7 +26,7 @@ import optparse
 from threading import Thread
 def extractFile( zFile, Password ):
 	try:
-		zFIle.extractAll(pwd= Password)
+		zFile.extractall(pwd= Password)
 		print '[+] Found password'+password+'\n'
 	except:
 		pass
@@ -41,7 +41,7 @@ def main():
 	else:
 		zname = options.zname
 		dname = options.dname
-	zFile = zipFile.ZipFile(zname)
+	zFile = zipfile.ZipFile(zname)
 
 	passFile = open( dname )
 	for lines in passFile.readlines():
